@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    transition: 1s;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-1 {
+    background-image: url('../img/1.jpg');
+}
+
+.slide-2 {
+    background-image: url('../img/2.jpg');
+}
+
+.slide-3 {
+    background-image: url('../img/3.jpg');
+}
+
+.slide-4 {
+    background-image: url('../img/4.jpg');
+}
+
+.slider-btn {
+    padding: 25px 21px;
+    display: inline-block;
+    background: #007bff;
+    border-radius : 50%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    line-height: 16px;
+}
+
+.slider-btn.left {
+    left: 15px;
+}
+
+.slider-btn.right {
+  right: 15px;
+}
+
+.slider-btn:hover {
+  background: #ffffff;
+  color: #007bff;
+}
